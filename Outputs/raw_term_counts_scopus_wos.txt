@@ -1,0 +1,51 @@
+"all_matches"	"Freq"
+"Absence"	92
+"Abundance"	709
+"Age"	74
+"Area"	698
+"Behavior"	236
+"Behaviour"	136
+"Biodiversity"	469
+"Biomass"	182
+"Canopy"	23
+"Composition"	483
+"Condition"	359
+"Coral"	909
+"Count"	128
+"Cover"	582
+"Density"	311
+"Distance"	129
+"Distinctiveness"	1
+"Disturbance"	222
+"Diversity"	513
+"Essential habitat"	8
+"Extent"	156
+"Fish"	1144
+"Frequency"	123
+"Invertebrate"	416
+"Kelp"	64
+"Length"	141
+"Macroalgae"	171
+"Mangrove"	25
+"Marine mammal"	18
+"Maturity"	6
+"Number of"	232
+"Occurrence"	199
+"Originality"	1
+"Phenology"	2
+"Presence"	310
+"Presence/absence"	17
+"Primary production"	29
+"Ray"	48
+"Residence time"	2
+"Resilience"	62
+"Sea turtle"	16
+"Seagrass"	146
+"Seaweed"	49
+"Sex"	27
+"Shark"	57
+"Size"	385
+"Spatial distribution"	140
+"Species richness"	194
+"Structure"	721
+"Weight"	50
