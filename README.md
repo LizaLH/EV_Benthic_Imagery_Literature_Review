@@ -11,7 +11,7 @@ Structure of the EV_Benthic_Imagery_Literature_Review repository:
 -Outputs/ contains output .csv and .txt files produced during analysis. These include tables of intermediate results and cleaned literature search results after further filtering and screening.
 -Figures/ contains the figures that are produced by the R scripts that are used in the Hasan et al. article.
 
--Processing steps
+Processing steps
 1. Run EV_lit_review_part1.R script
 2. Run* EV_lit_review_part2.R script
 *If using this repository as a vignette, manual screening of literature is required during EV_lit_review_part2.R script at the line that states "MANUAL CLEANING AT THIS POINT." The file that is imported after this line is your manually screened corpus of literature. 
