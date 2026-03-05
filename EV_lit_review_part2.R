@@ -297,13 +297,13 @@ write.csv(scopus_wos_fish_V26, "Outputs/scopus_wos_fish_manual_cleaning.csv")
 ################################################################################
 
 # import the cleaned fish papers
-fish_clean <- read.csv("Inputs/scopus_wos_fish_manually_cleaned.csv") 
+fish_clean <- read.csv("Inputs/Manual_screen/scopus_wos_fish_manually_cleaned.csv") 
 
 #remove duplicates
 fish_clean <- fish_clean[!duplicated(fish_clean$DOI),] #10 rows removed
 
 # import the excluded papers
-fish_excluded <- read.csv("Inputs/fish_literature_excluded_manual.csv")
+fish_excluded <- read.csv("Inputs/Manual_screen/fish_literature_excluded_manual.csv")
 
 # REMOVE THE HTTPS PREFIX FROM DOI
 fish_excluded$DOI <- substring(fish_excluded$doi, 17)
