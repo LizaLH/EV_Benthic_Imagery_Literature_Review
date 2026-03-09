@@ -1,6 +1,6 @@
 # Repository overview:
 
-This repository contains the literature review search results, code for analysis, and analysis outputs associated with Hasan et al. Systematic Review of Metrics Linking Benthic Marine Imagery with Essential Biodiversity Variables and Essential Ocean Variables. By following the R scripts in this repository, the analysis can be reproduced based on the literature search results produced for the research article. The goals of this analysis are to:  
+This repository contains the literature review search results, code for analysis, and analysis outputs associated with Hasan et al. (*in prep*) Systematic Review of Metrics Linking Benthic Marine Imagery with Essential Biodiversity Variables and Essential Ocean Variables. By following the R scripts in this repository, the analysis can be reproduced based on the literature search results produced for the research article. The goals of this analysis are to:  
    **(1)** to identify which Essential ocean Variables and Essential Biodiversity Variables have been assessed using benthic imagery; and  
    **(2)** to identify associations between metrics and modes of data collection, and to detect best use cases and gaps in benthic imagery data regarding EOVs and EBVs.
 
@@ -9,9 +9,9 @@ This repository contains the literature review search results, code for analysis
 - EV_lit_review_part1.R is the R script to conduct analysis associated with goal **(1)** of the literature review. This script will reference the appropriate literature search results housed in Inputs/Literature_search_results_part1.  
 - EV_lit_review_part2.R is the R script to conduct analysis associated with goal **(2)** of the literature review. This script will reference the appropriate literature search results housed in Inputs/Literature_search_results_part2.  
 - EV_Benthic_Imagery_Review.Rproj is the R project wrapper containing the contents of the repository.  
-- Inputs/ contains the literature review search results that will be used in the R scripts for analyses. The literature search results are separated into two folders (Literature_search_results_part1 and Literature_search_results_part2) based on literature searches conducted for goal **(1)** and goal **(2)** of the article. The subfolders contain multiple .csv files with the full corpus of literature from Scopus or Web of Science addressing specific questions. Please see Hasan et al. for further details on the literature search terms and questions. The Manual_screen subfolder contains the .csv file of literature related to fish that were manually screened for relevance to the article. It also contains a .csv file of the articles that were excluded through the manual screening process.  
+- Inputs/ contains the literature review search results that will be used in the R scripts for analyses. The literature search results are separated into two folders (Literature_search_results_part1 and Literature_search_results_part2) based on literature searches conducted for goal **(1)** and goal **(2)** of the article. The subfolders contain multiple .csv files with the full corpus of literature from Scopus or Web of Science addressing specific questions. Please see Hasan et al. (*in prep*) for further details on the literature search terms and questions. The Manual_screen subfolder contains the .csv file of literature related to fish that were manually screened for relevance to the article. It also contains a .csv file of the articles that were excluded through the manual screening process.  
 - Outputs/ contains output .csv and .txt files produced during analysis. These include tables of intermediate results and cleaned literature search results after further filtering and screening.  
-- Figures/ contains the figures that are produced by the R scripts that are used in the Hasan et al. article.  
+- Figures/ contains the figures that are produced by the R scripts that are used in Hasan et al. (*in prep*).  
 
 # Processing steps:
 
@@ -24,7 +24,7 @@ This repository contains the literature review search results, code for analysis
 The input files in the folders Literature_search_results_part1 and Literature_search_results_part2 contain the standard export files from Web of Science and Scopus literature searches. The input files in the folder Manual_screening contain: 
 - The Input/Literature_search_results_part1 folder contains the standard export files from Web of Science and Scopus literature searches. The fields selected during export contain bibliographic information only.
 - The Input/Literature_search_results_part2 folder contains the standard export files from Web of Science and Scopus literature searches. The fields selected during export contain bibliographic information, abstract, and keywords.
-- The Input/Manual_screen folder contains the files for goal **(2)** related to fish after manual screening of literature for inclusion or exclusion in analyses. Further description of methods can be found in the manuscript (Hasan et al.) associated with this repository. The specific ext-matching terms can be found within the script EV_lit_review_part2.R.
+- The Input/Manual_screen folder contains the files for goal **(2)** related to fish after manual screening of literature for inclusion or exclusion in analyses. Further description of methods can be found in the manuscript (Hasan et al. *in prep*) associated with this repository. The specific ext-matching terms can be found within the script EV_lit_review_part2.R.
   - scopus_wos_fish_manually_cleaned.csv
     - Authors: authors of article  
     - Title: title of article  
@@ -50,7 +50,7 @@ The input files in the folders Literature_search_results_part1 and Literature_se
     - DOI: article DOI with https:// prefix  
 
 # Literature search queries:  
-These literature search queries can be entered into Scopus and Web of Science, respectively, to reproduce the literature searches described in Hasan et al. Systematic Review of Metrics Linking Benthic Marine Imagery with Essential Biodiversity Variables and Essential Ocean Variables.
+These literature search queries can be entered into Scopus and Web of Science, respectively, to reproduce the literature searches described in Hasan et al. (*in prep*) Systematic Review of Metrics Linking Benthic Marine Imagery with Essential Biodiversity Variables and Essential Ocean Variables.
 ## Part 1:
 ### Search 1.1:
 **Scopus**:  ( TITLE-ABS-KEY ( "marine" OR "ocean" OR "sea" OR "coast*" ) AND TITLE-ABS-KEY ( "seabed" OR "benthic" OR "demersal" ) AND TITLE-ABS-KEY ( "imag*" OR "video*" OR "photo*" OR "footage*" ) ) AND ( LIMIT-TO ( DOCTYPE , "ar" ) )  
