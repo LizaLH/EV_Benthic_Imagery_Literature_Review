@@ -67,6 +67,11 @@ scopus_select <- scopus_1_1 %>%
 # combine datasets
 all_1_1 <- rbind(scopus_select,wos_additional)
 
+nrow(all_1_1)
+all_1_1_before_2013 <- all_1_1 %>%
+  filter(Year < 2013)
+nrow(all_1_1_before_2013)/nrow(all_1_1)
+
 ######################## part 1.2 ########################
 
 # Import literature search results
@@ -94,6 +99,12 @@ scopus_select <- scopus_1_2 %>%
 # combine datasets
 all_1_2 <- rbind(scopus_select,wos_additional)
 
+# filter for after 2013, when EBV was established
+all_1_2_2013_2025 <- all_1_2 %>%
+  filter(Year >= 2013)
+
+nrow(all_1_2)
+nrow(all_1_2_2013_2025)
 ######################## part 1.3 ########################
 
 # Import literature search results
@@ -121,6 +132,12 @@ scopus_select <- scopus_1_3 %>%
 # combine datasets
 all_1_3 <- rbind(scopus_select,wos_additional)
 
+# filter for after 2013, when EBV was established
+all_1_3_2013_2025 <- all_1_3 %>%
+  filter(Year >= 2013)
+
+nrow(all_1_3)
+nrow(all_1_3_2013_2025)
 ######################## HISTORGRAM OF PUBLICATIONS BY YEAR ########################
 
 all_1_1_counts <- all_1_1 %>%

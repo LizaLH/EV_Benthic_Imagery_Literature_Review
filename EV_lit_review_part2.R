@@ -369,6 +369,24 @@ fish_clean <- fish_clean %>%
 
 write.csv(fish_clean, file = "Outputs/fish_clean_metrics.csv")
 
+# ############### TABULATE REPRESENTAITON ###############
+# percent shallow
+table(fish_clean$depth_zone)
+nrow(fish_clean)
+279/760 
+
+table(fish_clean$image_platform)
+241/760 # lander
+176/760 # rov
+113/760 # diver
+114/760
+
+table(fish_clean$image_platform, fish_clean$depth_zone)
+99/279 # diver proportion in shallow studies
+112/279 # lander proportion in shallow studies
+78/179 # ROV proportion in slope studies
+39/179 # towv proportion in slope studies
+35/179 # lander proportion in slope studies
 # ############### BORAL ANALYSIS ###############
 
 y <- fish_clean[,c(18:40)]
